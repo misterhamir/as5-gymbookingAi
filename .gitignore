@@ -20,3 +20,7 @@ __pycache__/
 
 # uv
 uv.lock
+
+tutorial.md
+tutorial_2.md
+architecture_plan.md
