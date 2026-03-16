@@ -17,7 +17,15 @@ Aplikasi booking kelas gym dengan backend FastAPI dan frontend Streamlit yang te
 uv sync
 ```
 
-### 2. Seed database dengan data dummy
+### 2. Setup database
+
+Jalankan Alembic migration untuk membuat schema database (SQLite):
+
+```bash
+alembic upgrade head
+```
+
+### 3. Seed database dengan data dummy
 
 Jalankan script `seed_db.py` untuk generate 20 jadwal kelas gym dummy
 
@@ -31,7 +39,7 @@ atau:
 make seed
 ```
 
-### 3. Jalankan backend server
+### 4. Jalankan backend server
 
 ```bash
 uvicorn app.main:app --reload
@@ -43,7 +51,7 @@ atau:
 make server
 ```
 
-### 4. Jalankan UI (Streamlit)
+### 5. Jalankan UI (Streamlit)
 
 Di terminal terpisah, jalankan:
 
